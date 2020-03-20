@@ -55,6 +55,13 @@ body {
   padding-top: 5%;
 }
 
+#banner .btn-primary{
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
 .promo-title{
   font-size: 40px;
   font-weight: 600;
@@ -75,6 +82,7 @@ body {
 }
 
 .aboutme-img {
+  height: 300px;
   width: 300px;
   margin-top:20px
 }

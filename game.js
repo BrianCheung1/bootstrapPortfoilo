@@ -3,10 +3,7 @@ gameState = {
 };
 function preload() {
   this.load.image("codey", "./Resources/codey.png");
-  this.load.image(
-    "bomb",
-    "./Resources/BombFailling.svg"
-  );
+  this.load.image("bomb", "./Resources/BombFailling.svg");
   this.load.image(
     "platform",
     "https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/platform.png"
@@ -32,45 +29,49 @@ function create() {
 
   platforms.create(250, 510, "platform");
 
-    const bugs = this.physics.add.group();
-    this.physics.add.collider(gameState.codey,platforms)
+  const bombs = this.physics.add.group();
+  this.physics.add.collider(gameState.codey, platforms);
 
-  function bugGen() {
+  function bombGen() {
     const xCoord = Math.random() * 450;
-    bugs.create(xCoord, 10, "bomb").setScale(0.3);
+    bombs.create(xCoord, 10, "bomb").setScale(0.3);
   }
 
-  const bugGenLoop = this.time.addEvent({
+  const bombGenLoop = this.time.addEvent({
     delay: 150,
-    callback: bugGen,
+    callback: bombGen,
     callbackScope: this,
     loop: true
   });
 
   // Add your code below:
-  this.physics.add.collider(bugs, platforms, function(bug) {
-    bug.destroy();
-      gameState.score += 10;
-      gameState.scoreText.setText(`Score: ${gameState.score}`)
+  this.physics.add.collider(bombs, platforms, function(bombs) {
+    bombs.destroy();
+    gameState.score += 10;
+    gameState.scoreText.setText(`Score: ${gameState.score}`);
   });
-    
-    this.physics.add.collider(gameState.codey, bugs, () => {
-        bugGenLoop.destroy();
-        this.physics.pause()
-        this.add.text(200, 400, 'Game Over', { fontSize: '20px', fill: "#FFFFFF" })
-        this.add.text(175, 350, 'Click to restart', { fontSize: '20px', fill: "#FFFFFF" })
-        this.input.on('pointerup', () => {
-            gameState.score = 0;
-            this.scene.restart();
-        })
-    })
 
+  this.physics.add.collider(gameState.codey, bombs, () => {
+    bombsGenLoop.destroy();
+    this.physics.pause();
+    this.add.text(200, 400, "Game Over", { fontSize: "20px", fill: "#FFFFFF" });
+    this.add.text(175, 350, "Click to restart", {
+      fontSize: "20px",
+      fill: "#FFFFFF"
+    });
+    this.input.on("pointerup", () => {
+      gameState.score = 0;
+      this.scene.restart();
+    });
+  });
 }
 
 function update() {
   /*if (gameState.cursors.down.isDown) {
     gameState.codey.y += 3;
-  }*/if (gameState.cursors.up.isDown) {
+  }*/ if (
+    gameState.cursors.up.isDown
+  ) {
     gameState.codey.setVelocityY(-160);
   } else if (gameState.cursors.left.isDown) {
     gameState.codey.setVelocityX(-160);

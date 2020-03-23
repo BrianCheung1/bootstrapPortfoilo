@@ -4,8 +4,8 @@ gameState = {
 function preload() {
   this.load.image("codey", "./Resources/codey.png");
   this.load.image(
-    "bug1",
-    "https://s3.amazonaws.com/codecademy-content/courses/learn-phaser/physics/bug_1.png"
+    "bomb",
+    "./Resources/BombFailling.svg"
   );
   this.load.image(
     "platform",
@@ -35,9 +35,9 @@ function create() {
     const bugs = this.physics.add.group();
     this.physics.add.collider(gameState.codey,platforms)
 
-  function bugGen() {
+  function bugGen() {g
     const xCoord = Math.random() * 450;
-    bugs.create(xCoord, 10, "bug1");
+    bugs.create(xCoord, 10, "bomb").setScale(0.3);
   }
 
   const bugGenLoop = this.time.addEvent({

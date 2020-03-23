@@ -35,7 +35,7 @@ function create() {
     const bugs = this.physics.add.group();
     this.physics.add.collider(gameState.codey,platforms)
 
-  function bugGen() {g
+  function bugGen() {
     const xCoord = Math.random() * 450;
     bugs.create(xCoord, 10, "bomb").setScale(0.3);
   }

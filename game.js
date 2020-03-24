@@ -21,7 +21,7 @@ function create() {
   gameState.cursors = this.input.keyboard.createCursorKeys();
   this.add.text(175, 20, "Move with arrow keys", style);
   gameState.scoreText = this.add.text(220, 450, "Score: 0", {
-    fontSize: "15px",
+    fontSize: "16px",
     fill: "#FFFFFF"
   });
 

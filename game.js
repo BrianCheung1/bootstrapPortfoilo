@@ -52,7 +52,7 @@ function create() {
   });
 
   this.physics.add.collider(gameState.codey, bombs, () => {
-    bombsGenLoop.destroy();
+    bombGenLoop.destroy();
     this.physics.pause();
     this.add.text(200, 400, "Game Over", { fontSize: "20px", fill: "#FFFFFF" });
     this.add.text(175, 350, "Click to restart", {

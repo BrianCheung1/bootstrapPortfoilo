@@ -8,7 +8,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <link href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.js"></script>
+  
+  <!--Phaser Project Game Files-->
+  <script src = "StartScene.js"></script>
+  <script src = "GameScene.js"></script>
   <script src="game.js"></script>
+  
 </head>
 <body>
   <section id = "nav-bar">
@@ -28,11 +33,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">PROJECTS</a>
           </li>
+          <!--
           <li class="nav-item">
             <a class="nav-link " href="#something">PLACEHOLDER</a>
-          </li>
+          </li>-->
           <li class="nav-item">
-            <a class="nav-link " href="#contact">CONTACT</a>
+            <a class="nav-link " href="#footer">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -45,8 +51,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <p class="promo-title">Expect The Expected</p>
-          <p>A project to help me learn how to make a website</p>
+          <p class="promo-title">Brian Cheung's Website</p>
+          <p>Scroll to explore more</p>
           <a href = "https://github.com/BrianCheung1" target="_blank"><button type="button" class="btn btn-primary">CLICK HERE</button></a>
         </div>
         <div class="col-md-6 text-center">
@@ -90,15 +96,13 @@
       <div class="col-md-6 projects">
         <p class="project-title">Personal Projects</p>
         <ul>
-          <li>Source Code</li>
+          <li><a href="https://github.com/BrianCheung1/ProjectTextBasedGame" target ="_blank">Source Code</a></li>
           <img src="./Resources/RPG.png">
-          <li>Source Code</li>
+          <li><a href="https://github.com/BrianCheung1/ProjectItemGen" target ="_blank">Source Code</a></li>
           <img src="./Resources/RandomLeague.png">
-          <li>Created with Phaser</li>
+          <li><a href="https://github.com/BrianCheung1/briancheung1.github.io" target ="_blank">Source Code</a></li>
           <div id = 'phaser-example'>
           </div>
-          <li>Project 1</li>
-          <li>Project 1</li>
         </ul>
       </div>
       <div class="col-md-6 projects">
@@ -110,23 +114,18 @@
 <!---Something-->
 <section id="something">
   <div class="container">
-    <h1 class="title text-center">SOMETHING</h1>
+    <h1 class="title text-center">Profile</h1>
     <div class=row offset-1">
       <div class="col-md-5 something">
-        <p>I Love To Code</p>
+        <p>Contributors</p>
         <img src="./Resources/something.svg">
-        <p class="something-details"><b>Butter</b><br>Creator of butter</p>
-      </div>
-      <div class="col-md-5 something">
-        <p>I Love To Code</p>
-        <img src="./Resources/something.svg">
-        <p class="something-details"><b>Butter</b><br>Creator of butter</p>
+        <p class="something-details"><b>Brian Cheung</b><br>Junior</p>
       </div>
     </div>
   </div>
 </section>
 
-<!--contact-->
+<!--contact
 <section id="contact">
   <div class="container text-center">
     <p>FIND ME ON DISCORD</p>
@@ -134,7 +133,7 @@
       <a href="#"><img src="./Resources/contacts.svg"></a>
     </div>
   </div>
-</section>
+</section>-->
 
 <!--footer-->
 <section id="footer">
@@ -143,19 +142,19 @@
     <div class="row">
       <div class="col-md-4 footer-box">
         <img src="./Resources/logo.svg">
-        <p>SOMETHING HERE TO PLACEHOLD</p>
+        <p></p>
       </div>
       <div class="col-md-4 footer-box">
-        <p><b>CONTACT US</b></p>
-        <p><i class="fa fa-map"></i> BUTTER WORLD</p>
-        <p><i class="fa fa-phone"></i> BUTTER WORLD</p>
-        <p><i class="fa fa-envelope"></i> BUTTER WORLD</p>
+        <p><b>CONTACT ME</b></p>
+        <p><i class="fa fa-map"></i> Brooklyn,NY</p>
+        <p><i class="fa fa-phone"></i> 716-416-1318</p>
+        <p><i class="fa fa-envelope"></i> Brian.Cheung1@baruchmail.cuny.edu</p>
       </div>
-      <div class="col-md-4 footer-box">
+      <!--<div class="col-md-4 footer-box">
         <p><b>CLICK HERE</b></p>
         <input type="email" class="form-control" placeholder="Your Email">
         <button type="button" class="btn btn-primary">CLICK HERE</button>
-      </div>
+      </div>-->
     </div>
     <hr>
     <p class="copyright">Website created by Butter</p>

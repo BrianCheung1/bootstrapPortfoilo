@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/*the navbar is placed on top*/
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/*a nice gradient for the navigation*/
+.navbar {
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+  padding: 0 !important;
+}
+
+/*the logo on the right side of the nav bar*/
+.navbar-brand img {
+  height: 40px;
+  padding-left: 20px;
+}
+
+.navbar li {
+  padding: 0 10px;
+}
+
+/*this allows the list to be on the right when on phone*/
+.navbar li a {
+  color: white !important;
+  font-weight: 600;
+  float: right;
+  text-align: left;
+}
+
+/*changes the hamburger to white*/
+.fa-bars {
+  color: white;
+  font-size: 30px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+/*Banner*/
+#banner {
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+  color: white;
+  padding-top: 5%;
+}
+
+#banner .btn-primary{
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+.promo-title{
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+#banner a{
+  color: white;
+  text-decoration: none;
+}
+
+.img-fluid {
+  padding-bottom: 250px;
+}
+
+#aboutme {
+  padding: 80px 0;
+}
+
+.aboutme-img {
+  height: 300px;
+  width: 300px;
+  margin-top:20px
+}
+
+.aboutme{
+  padding: 20px;
+}
+
+.aboutme h3{
+  padding: 5px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.title::before{
+  content: '';
+  background: #7b1798;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+#aboutme .btn-primary{
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+
+/*Projects*/
+#projects{
+  background: #f8f9fa;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.project-title{
+  font-size:40px;
+  font-weight: 600;
+  margin-top: 8%;
+}
+
+#projects ul li{
+  margin: 10px 0;
+}
+
+#projects ul{
+  margin-left: 20px;
+}
+
+/*SOMETHING*/
+#something{
+  margin: 100px 0;
+}
+
+.something{
+  border-left: 4px solid #7b1798;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.something img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.something-details{
+  display: inline-block;
+  font-size: 12px;
+}
+
+/*contacts*/
+#contact{
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+#contact p{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-icons img{
+  width:60px;
+  transition: 0.5s;
+}
+
+.contact-icons a:hover img{
+  transform: translateY(-10px);
+}
+
+/*footer*/
+#footer{
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+  color:white
+}
+
+.footer-img{
+  width:100px;
+}
+
+.footer-box{
+  padding: 20px;
+}
+
+.footer-box img{
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-box .fa{
+  margin-right: 8px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.footer-box .form-control{
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 25px;
+  max-width: 250px;
+}
+
+.footer-box .btn-primary{
+  box-shadow: none !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 0px;
+  background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+hr{
+  background-color: white;
+}
+
+.copyright{
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}

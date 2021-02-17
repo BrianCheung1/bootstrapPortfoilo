@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
+  
 
   <!-- JQuery CDN-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -31,6 +32,11 @@
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script src="functions.js"></script>
 
+    <!--Phaser Project Game Files-->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.js"></script>
+    <script src = "StartScene.js"></script>
+    <script src = "GameScene.js"></script>
+    <script src="game.js"></script>
 
 </head>
 
@@ -81,7 +87,7 @@
       <div class="row welcome text-center ">
         <!-- Takes up entire width all 12 col-->
         <div class="col-12 mt-5">
-          <h1 class="dispaly-4"><strong>Brian Cheung</strong></h1>
+          <h1 class="display-4"><strong>Brian Cheung</strong></h1>
         </div>
 
         <hr>
@@ -107,7 +113,7 @@
     <div class="container my-5 padding">
       <div class="row welcome text-center ">
         <div class="col-12 mt-5">
-          <h1 class="dispaly-4"><strong>About Me</strong></h1>
+          <h1 class="display-4"><strong>About Me</strong></h1>
         </div>
 
         <hr>
@@ -140,21 +146,23 @@
 
   <!-- Projects -->
   <section id="Projects">
-    <div class="container-fluid my-5 padding">
+    <div class="container-fluid justify-content-center">
       <!-- Project Heading-->
       <div class="row welcome text-center">
-        <div class="col-12">
-          <h1 class="display-4"><strong>Projects</strong></h1>
+        <div class="col">
+          <h1 class="dispaly-4"><strong>Projects</strong></h1>
           <hr>
         </div>
       </div>
 
-      <div class="row text-center">
-        <div class="col-md-4">
-          <div class="card bg-dark">
+      <div class="row text-center justify-content-center">
+        <div class="col-lg-4 my-2">
+          <div class="card bg-dark border-primary">
+            <div class="card-header border-primary mt-2">
+              <h4 class="card-title">Discord Bot</h4>
+            </div>
             <img class="card-img-top" src="img/discordbot.png">
             <div class="card-body">
-              <h4 class="card-title">Discord Bot</h4>
               <p class="card-text">This was a project coded in python meant to provide games and moderation over a
                 discord server.</p>
               <a href="https://github.com/BrianCheung1/DiscordBotpy" target="_blank"
@@ -162,12 +170,16 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-4">
-          <div class="card bg-dark">
+      <div class="row text-center justify-content-center">
+        <div class="col-lg-4 align-items-stretch ">
+          <div class="card bg-dark border-primary">
+            <div class="card-header border-primary mt-2">
+              <h4 class="card-title">Unity Game</h4>
+            </div>
             <img class="card-img-top" src="img/UnityGame.png">
             <div class="card-body">
-              <h4 class="card-title">Unity Game</h4>
               <p class="card-text">Spent some time learning the basics of using the unity engine and c# scripts. Learned
                 how to create hitboxes, movement, sprites in a simple game.</p>
               <a href="https://github.com/BrianCheung1/TopDownUnityGame" target="_blank"
@@ -178,11 +190,14 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card bg-dark">
-            <img class="card-img-top" src="img/HTMLgame.png">
-            <div class="card-body">
+        <div class="col-lg-4 ">
+          <div class="card bg-dark border-primary">
+            <div class="card-header border-primary mt-2">
               <h4 class="card-title">Phaser Game</h4>
+            </div>
+            <div class="card-body">
+              <div id='phaser-example'>
+              </div>
               <p class="card-text">Spent some time learning how to use phaser. Created sprites and score system based on
                 time survived.</p>
               <a href="https://github.com/BrianCheung1/BobGameCodecademy" target="_blank"
@@ -191,20 +206,21 @@
           </div>
         </div>
 
+
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="Contacts">
-    <div class="container-fluid padding">
+    <div class="container-fluid my-5">
       <div class="row text-center">
         <div class="col-12">
-          <h2>Contacts</h2>
+          <h1 class="display-4"><strong>Contacts</strong></h1>
         </div>
 
         <div class="col-12 social">
-          <a href="https://www.linkedin.com/in/brian-cheung-a82a191a3/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/brian-cheung-a82a191a3/" target="_blank"><i class="fab fa-linkedin"></i></a>
 
           <button onclick="copyToClipboard('#p1')" type="button" class="btn btn-primary" id="p1" data-toggle="tooltip" data-placement="top" title="Click to Copy">butter#4293</button>
           

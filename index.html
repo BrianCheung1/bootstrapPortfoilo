@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
-  
+
 
   <!-- JQuery CDN-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -32,11 +32,11 @@
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script src="functions.js"></script>
 
-    <!--Phaser Project Game Files-->
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.js"></script>
-    <script src = "StartScene.js"></script>
-    <script src = "GameScene.js"></script>
-    <script src="game.js"></script>
+  <!--Phaser Project Game Files-->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.js"></script>
+  <script src="StartScene.js"></script>
+  <script src="GameScene.js"></script>
+  <script src="game.js"></script>
 
 </head>
 
@@ -170,10 +170,26 @@
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 my-2">
+          <div class="card bg-dark border-primary">
+            <div class="card-header border-primary mt-2">
+              <h4 class="card-title">Phaser Game</h4>
+            </div>
+            <div class="card-body">
+              <div id='phaser-example'>
+              </div>
+              <p class="card-text">Spent some time learning how to use phaser. Created sprites and score system based on
+                time survived.</p>
+              <a href="https://github.com/BrianCheung1/BobGameCodecademy" target="_blank"
+                class="btn btn-outline-danger">Source Code</a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="row text-center justify-content-center">
-        <div class="col-lg-4 align-items-stretch ">
+        <div class="col-lg-4 my-2">
           <div class="card bg-dark border-primary">
             <div class="card-header border-primary mt-2">
               <h4 class="card-title">Unity Game</h4>
@@ -190,23 +206,20 @@
           </div>
         </div>
 
-        <div class="col-lg-4 ">
+        <div class="col-lg-4 my-2">
           <div class="card bg-dark border-primary">
             <div class="card-header border-primary mt-2">
-              <h4 class="card-title">Phaser Game</h4>
+              <h4 class="card-title">Valorant Info Website</h4>
             </div>
+            <img class="card-img-top" src="./img/ValorantWebsiteScreen.png">
             <div class="card-body">
-              <div id='phaser-example'>
-              </div>
-              <p class="card-text">Spent some time learning how to use phaser. Created sprites and score system based on
-                time survived.</p>
-              <a href="https://github.com/BrianCheung1/BobGameCodecademy" target="_blank"
+              <p class="card-text">Using bootstrap, I was able to learn how to create minimal responsive websites to
+                display information and pictures</p>
+              <a href="https://github.com/BrianCheung1/DiscordBotpy" target="_blank"
                 class="btn btn-outline-danger">Source Code</a>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
@@ -220,11 +233,14 @@
         </div>
 
         <div class="col-12 social">
-          <a href="https://www.linkedin.com/in/brian-cheung-a82a191a3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/brian-cheung-a82a191a3/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
 
-          <button onclick="copyToClipboard('#p1')" type="button" class="btn btn-primary" id="p1" data-toggle="tooltip" data-placement="top" title="Click to Copy">butter#4293</button>
-          
-          <button onclick="copyToClipboard('#p2')" type="button" class="btn btn-primary" id="p2" data-toggle="tooltip" data-placement="top" title="Click to Copy">Brian.cheung39@myhunter.cuny.edu</button>
+          <button onclick="copyToClipboard('#p1')" type="button" class="btn btn-primary" id="p1" data-toggle="tooltip"
+            data-placement="top" title="Click to Copy">butter#4293</button>
+
+          <button onclick="copyToClipboard('#p2')" type="button" class="btn btn-primary" id="p2" data-toggle="tooltip"
+            data-placement="top" title="Click to Copy">Brian.cheung39@myhunter.cuny.edu</button>
 
           <a href="https://github.com/BrianCheung1" target="_blank"><i class="fab fa-github hover-purple-icons"
               data-toggle="tooltip" data-placement="bottom" title="Github"></i></a>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-html,body {
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -11,23 +12,23 @@ html,body {
     padding: .8rem;
 }
 
-.navbar-nav li{
+.navbar-nav li {
     padding-right: 10px;
 }
 
 .padding {
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 30rem;
 }
 
-.welcome{
+.welcome {
     width: 75%;
     margin: 0 auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.welcome hr{
+.welcome hr {
     border-top: 2px solid #b4b4b4;
     width: 95%;
     margin-top: .5rem;
@@ -42,4 +43,45 @@ html,body {
 .languages {
     font-size: 4.5em;
     padding: 2rem;
+}
+
+/* 
+The animation code
+@keyframes example {
+    0%   {top:-100px;}
+    100% {top:0px;}
+}
+
+The element to apply the animation to
+.title-anim {
+    animation-name: example;
+    animation-duration: 1s;
+    position: relative;
+    animation-timing-function: linear;
+} */
+
+
+.fade-in {
+    -webkit-animation: fade-in 2s;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    0% {
+        -webkit-transform: translateY(300px);
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
